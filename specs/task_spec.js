@@ -17,6 +17,10 @@ describe ("Task", function() {
     assert.strictEqual(task1.urgencyLevel, 2);
   })
 
+  it("Task has a reward", function() {
+    assert.strictEqual(task1.reward, 25);
+  })
+
 
 
 
