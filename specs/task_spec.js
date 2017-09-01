@@ -6,7 +6,7 @@ describe ("Task", function() {
   var task1;
 
   beforeEach(function() {
-    task1 = new Task(3, 2, 25);
+    task1 = new Task(3, 2, 25, false);
   })
 
   it("Task has a difficulty level", function() {
@@ -20,6 +20,16 @@ describe ("Task", function() {
   it("Task has a reward", function() {
     assert.strictEqual(task1.reward, 25);
   })
+
+  it("Task should not be completed initially", function () {
+    assert.strictEqual(task1.completed, false)
+  })
+
+  it("Task should marked as completed", function () {
+    task1.finish()
+    assert.strictEqual(task1.completed, true)
+  })
+  
 
 
 
