@@ -3,19 +3,6 @@ var Food = function(name, replenishment) {
   this.replenishment = replenishment;
 }
 
-// Food.prototype = {
-//   replenish: function(food) {
-//     if(amount <= 3) {
-//       this.amount.push(food)
-//     }
-//     return true {
-//       else
-//     } return false
-//   }
-
-
-// }
-
 
 
 

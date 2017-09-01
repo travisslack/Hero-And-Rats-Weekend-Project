@@ -17,14 +17,6 @@ describe("Food", function() {
     assert.strictEqual(food1.replenishment, 5)
   })
 
-  // it("Food does not need replenished", function() {
-  //   assert.strictEqual(food1.replenish, false)
-  // })
-
-  // it("Food csan replenish when below a certain amount", function() {
-  //   assert.strictEqual(food1.replenish, true)
-  // })
-
 
 
 
