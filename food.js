@@ -1,10 +1,18 @@
-var Food = function(name, amount) {
+var Food = function(name, replenishment) {
   this.name = name;
-  this.amount = amount;
+  this.replenishment = replenishment;
 }
 
 // Food.prototype = {
-  
+//   replenish: function(food) {
+//     if(amount <= 3) {
+//       this.amount.push(food)
+//     }
+//     return true {
+//       else
+//     } return false
+//   }
+
 
 // }
 
