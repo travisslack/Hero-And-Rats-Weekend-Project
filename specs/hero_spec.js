@@ -13,6 +13,10 @@ describe("Hero", function() {
     assert.strictEqual(hero.name, "Batman");
   })
 
+  it("Hero has a favourite food", function() {
+    assert.strictEqual(hero.favouriteFood, "Steak");
+  })
+
 
 
 
