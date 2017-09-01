@@ -13,6 +13,10 @@ describe ("Task", function() {
     assert.strictEqual(task1.difficultyLevel, 3);
   })
 
+  it("Task has an urgency level", function() {
+    assert.strictEqual(task1.urgencyLevel, 2);
+  })
+
 
 
 
