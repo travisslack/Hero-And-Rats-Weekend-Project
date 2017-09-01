@@ -6,7 +6,7 @@ describe("Food", function() {
   var food1;
 
   beforeEach(function() {
-    food1 = new Food("Steak", 5);
+    food1 = new Food("Steak", 10);
   });
 
   it("Food has a name", function() {
@@ -14,7 +14,7 @@ describe("Food", function() {
   })
 
   it("Food has a replenishment value", function() {
-    assert.strictEqual(food1.replenishment, 5)
+    assert.strictEqual(food1.replenishment, 10)
   })
 
 

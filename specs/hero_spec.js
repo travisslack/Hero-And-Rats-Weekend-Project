@@ -12,7 +12,8 @@ describe ("Hero", function() {
   beforeEach(function() {
     hero = new Hero("Batman", "Steak", 100);
     task1 = new Task(4, 5, 50, "false");
-    food1 = new Food("Fish", 5);
+    food1 = new Food("Steak", 10);
+    food2 = new Food("Fish", 20);
 
   })
 
@@ -38,8 +39,13 @@ describe ("Hero", function() {
   })
 
   it("Heros health goes up when eating", function() {
+    hero.eat(food2);
+    assert.equal(hero.health, 120);
+  })
+
+  it("if food is favourite food, health goes up by 1.5", function() {
     hero.eat(food1);
-    assert.equal(hero.health, 105);
+    assert.equal(hero.health, 115);
   })
 
 
