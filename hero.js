@@ -3,7 +3,7 @@ var Hero = function(name, favouriteFood) {
   this.favouriteFood = favouriteFood;
   this.health = 100;
   this.tasksToBeCompleted = [];
-  this.belly= [];
+  this.stomach= [];
 
 }
 
@@ -15,9 +15,10 @@ Hero.prototype = {
     this.tasksToBeCompleted.push(task);
   },
   eat: function(food) {
-    this.belly.push(food);
+    this.health += food.replenishment;
   }
 }
+  
 
 
 

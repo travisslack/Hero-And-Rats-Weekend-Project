@@ -37,10 +37,14 @@ describe ("Hero", function() {
     assert.strictEqual(hero.tasksToBeCompleted.length, 1)
   })
 
-  it("Hero can eat food", function() {
+  it("Heros health goes up when eating", function() {
     hero.eat(food1);
-    assert.strictEqual(hero.belly.length, 1);
+    assert.equal(hero.health, 105);
   })
+
+
+
+
 
 
 
