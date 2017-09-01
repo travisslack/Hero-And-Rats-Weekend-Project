@@ -2,7 +2,8 @@ var Hero = function(name, favouriteFood) {
   this.name = name;
   this.favouriteFood = favouriteFood;
   this.health = 100;
-  this.tasksToBeCompleted = []
+  this.tasksToBeCompleted = [];
+  this.belly= [];
 
 }
 
@@ -12,6 +13,9 @@ Hero.prototype = {
   },
   addTask: function(task) {
     this.tasksToBeCompleted.push(task);
+  },
+  eat: function(food) {
+    this.belly.push(food);
   }
 }
 
