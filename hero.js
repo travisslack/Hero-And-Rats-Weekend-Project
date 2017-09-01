@@ -3,3 +3,5 @@ var Hero = function(name, favouriteFood) {
   this.favouriteFood = favouriteFood;
   this.health = 100;
 }
+
+module.exports = Hero;
