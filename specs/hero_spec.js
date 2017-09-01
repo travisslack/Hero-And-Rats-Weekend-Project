@@ -1,16 +1,16 @@
 var assert = require("assert");
 var Hero = require("../hero.js");
-// var Task = require("../task.js")
+var Task = require("../task.js")
 
 describe ("Hero", function() {
 
   var hero;
-  // var task1;
+  var task1;
 
   beforeEach(function() {
     hero = new Hero("Batman", "Steak", 100);
-    // task1 = new Task(4, 5, 50, "false");
-    // task2 = new Task(, 5, 50, "false");
+    task1 = new Task(4, 5, 50, "false");
+    task2 = new Task(3, 5, 50, "false");
 
   })
 
@@ -30,10 +30,10 @@ describe ("Hero", function() {
     assert.strictEqual(hero.speak(), "Hello, My name is: Batman");
   })
 
-  // it("Hero has a list of tasks", function() {
-  //   hero.
-  //   assert.strictEqual(hero.listOfTasks, 2)
-  // })
+  it("Hero has a list of tasks to be completed", function() {
+    hero.addTask(task1);
+    assert.strictEqual(hero.tasksToBeCompleted.length, 1)
+  })
 
 
 
