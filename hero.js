@@ -20,6 +20,11 @@ Hero.prototype = {
     } else {
       this.health += food.replenishment
     }
+  },
+  difficultySorting: function(){
+    return this.tasksToBeCompleted.sort(function(task1, task2) {
+      return task1.difficulty - task2.difficulty 
+    });
   }
 }
 
